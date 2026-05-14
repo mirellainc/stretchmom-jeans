@@ -2,14 +2,25 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Flash Sale - Best Selling Products</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8633291767803962604.png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         body {
         }
         .premium-bg {
@@ -193,12 +204,11 @@
 
         // Set iframe dimensions to mobile size
         document.addEventListener('DOMContentLoaded', function() {
-            const iframeContainer = document.querySelector('preview-iframe-container');
-            iframeContainer.style.width = '100%';
-            iframeContainer.style.maxWidth = '480px';
+            const iframeContainer = document.querySelector('.preview-iframe-container');
+            iframeContainer.style.width = '375px';
+            iframeContainer.style.maxWidth = '100%';
             iframeContainer.style.margin = '0 auto';
         });
-        
          lucide.createIcons();
     </script>
 </body>
