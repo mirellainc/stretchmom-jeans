@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Flash Sale - Best Selling Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -17,8 +17,7 @@
         }
     </style>
 </head>
-<body>
-<div class="bg-gray-100 pb-20 max-w-md mx-auto">
+<body class="bg-gray-100 pb-20 max-w-md mx-auto">
 
 <!-- Main Content -->
     <main>
@@ -196,7 +195,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const iframeContainer = document.querySelector('.preview-iframe-container');
             iframeContainer.style.width = '100%';
-            iframeContainer.style.maxWidth = '1200px';
+            iframeContainer.style.maxWidth = '480px';
             iframeContainer.style.margin = '0 auto';
         });
          lucide.createIcons();
