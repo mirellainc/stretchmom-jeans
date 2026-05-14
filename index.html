@@ -2,11 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Flash Sale - Best Selling Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,48 +10,10 @@
     <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8633291767803962604.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        html {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            min-height: -webkit-fill-available;
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-overflow-scrolling: touch;
-            overscroll-behavior-y: contain;
-            overflow-x: hidden;
-            width: 100%;
-            max-width: 100vw;
         }
-
-        /* Mobile-first container */
-        .mobile-container {
-            width: 100%;
-            max-width: 480px;
-            margin: 0 auto;
-            min-height: 100vh;
-            min-height: -webkit-fill-available;
-            background-color: #f3f4f6;
-            position: relative;
-            overflow-x: hidden;
+        .premium-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
         }
     </style>
 </head>
@@ -230,15 +188,6 @@
                     v.classList.remove('active');
                 });
                 this.classList.add('active');
-            });
-        });
-
-        // Set iframe dimensions to mobile size
-        document.addEventListener('DOMContentLoaded', function() {
-            const iframeContainer = document.querySelector('.preview-iframe-container');
-            iframeContainer.style.width = '375px';
-            iframeContainer.style.maxWidth = '100%';
-            iframeContainer.style.margin = '0 auto';
         });
          lucide.createIcons();
     </script>
